@@ -1,0 +1,3 @@
+./darknet detector test ./cfg/coco.data ./cfg/yolov3.cfg ./weights/yolov3.weights
+/home/vamsi/FLIR_ADAS/training/RGB/FLIR_00002.jpg
+/home/vamsi/FLIR_ADAS/training/thermal_8_bit/FLIR_00002.jpeg
