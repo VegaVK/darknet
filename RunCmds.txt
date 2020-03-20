@@ -2,9 +2,20 @@
 /home/vamsi/FLIR_ADAS/training/RGB/FLIR_00002.jpg
 /home/vamsi/FLIR_ADAS/training/thermal_8_bit/FLIR_00002.jpeg
 
-Train:
+Train(spp):
 ./darknet detector train ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/cfg/yolov3-spp-flir.cfg ~/DN_VVK/darknet/backup/yolov3-spp-flir_last.weights -map
 
-Test:
+Train with last weights:
+./darknet detector train ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/cfg/yolov3-flir.cfg ~/DN_VVK/darknet/backup/yolov3-flir_last.weights -map
+
+Train fresh:
+./darknet detector train ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/cfg/yolov3-flir.cfg -map
+
+
+Test(spp):
 ./darknet detector map ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/cfg/yolov3-spp-flir.cfg ~/DN_VVK/darknet/backup/yolov3-spp-flir_final.weights
+
+Test:
+./darknet detector map ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/cfg/yolov3-flir.cfg ~/DN_VVK/darknet/backup/yolov3-flir_final.weights
+
 
