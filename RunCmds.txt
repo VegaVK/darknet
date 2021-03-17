@@ -1,4 +1,5 @@
-./darknet detector test ./cfg/coco.data ./cfg/yolov3.cfg ./weights/yolov3.weights
+./darknet detector map ~/DN_VVK/darknet/cfg/coco.data ~/DN_VVK/darknet/cfg/yolov3.cfg ~/DN_VVK/darknet/weights/yolov3.weights
+
 /home/vamsi/FLIR_ADAS/training/RGB/FLIR_00002.jpg
 /home/vamsi/FLIR_ADAS/training/thermal_8_bit/FLIR_00002.jpeg
 
@@ -19,3 +20,4 @@ Test:
 ./darknet detector map ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/cfg/yolov3-flir.cfg ~/DN_VVK/darknet/backup/yolov3-flir_final.weights
 
 
+./darknet detector map ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/backup/train_8/yolov3-flir.cfg ~/DN_VVK/darknet/backup/train_8/yolov3-flir_best.weights -points 11

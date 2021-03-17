@@ -5,7 +5,7 @@ OPENCV=1
 AVX=0
 OPENMP=0
 LIBSO=0
-ZED_CAMERA=0 # ZED SDK 3.0 and above
+ZED_CAMERA=1 # ZED SDK 3.0 and above
 ZED_CAMERA_v2_8=0 # ZED SDK 2.X
 
 # set GPU=1 and CUDNN=1 to speedup on GPU
