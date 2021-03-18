@@ -1,5 +1,0 @@
-classes= 3
-train  = data/flirData/train.txt
-valid  = data/flirData/test.txt
-names = data/flir.names
-backup = backup
