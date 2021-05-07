@@ -21,3 +21,14 @@ Test:
 
 
 ./darknet detector map ~/DN_VVK/darknet/data/flir.data ~/DN_VVK/darknet/backup/train_8/yolov3-flir.cfg ~/DN_VVK/darknet/backup/train_8/yolov3-flir_best.weights -points 11
+
+
+#### KITTI Training:
+
+Train fresh (YoloV4):
+./darknet -i 0 detector train ~/DN_VVK/darknet/cfg/kitti_custom.data ~/DN_VVK/darknet/cfg/yolov4_kitti_pano.cfg -map
+
+
+Train fresh (Yolov3):
+./darknet -i 0 detector train ~/DN_VVK/darknet/cfg/kitti_custom.data ~/DN_VVK/darknet/cfg/yolov3-kitti.cfg -map
+
