@@ -1,8 +1,8 @@
 classes= 3
-train  = /home/pjreddie/data/coco/trainvalno5k.txt
-valid  = coco_testdev
+train  = /home/vamsi/DN_VVK/darknet/data/kitti_modified/images/TrainManifest.txt
+valid  = /home/vamsi/DN_VVK/darknet/data/kitti_modified/images/ValManifest.txt
 #valid = data/coco_val_5k.list
-names = data/coco_custom.names
+names = cfg/kitti_custom.names
 backup = darknet/backup/
 eval=coco
 
