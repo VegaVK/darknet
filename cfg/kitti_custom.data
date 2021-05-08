@@ -1,6 +1,6 @@
 classes= 3
-train  = /home/vamsi/DN_VVK/darknet/data/kitti_modified/images/TrainManifest.txt
-valid  = /home/vamsi/DN_VVK/darknet/data/kitti_modified/images/ValManifest.txt
+train  = /home/vamsi/DN_VVK/darknet/data/kitti_modified/TrainManifest.txt
+valid  = /home/vamsi/DN_VVK/darknet/data/kitti_modified/ValManifest.txt
 #valid = data/coco_val_5k.list
 names = cfg/kitti_custom.names
 backup = darknet/backup/
