@@ -25,9 +25,11 @@ Test:
 
 #### KITTI Training:
 
-Train fresh (YoloV4):
+#Train fresh (YoloV4):
 ./darknet detector train ~/DN_VVK/darknet/cfg/kitti_custom.data ~/DN_VVK/darknet/cfg/yolov4_kitti_pano.cfg -map
 
+# Continue Training (v4)
+./darknet detector train ~/DN_VVK/darknet/cfg/kitti_custom.data ~/DN_VVK/darknet/cfg/yolov4_kitti_pano.cfg -map
 
 Train fresh (Yolov3):
 ./darknet -i 0 detector train ~/DN_VVK/darknet/cfg/kitti_custom.data ~/DN_VVK/darknet/cfg/yolov3-kitti.cfg -map
